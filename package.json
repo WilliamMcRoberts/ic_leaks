@@ -1,0 +1,22 @@
+{
+  "name": "ic_leaks",
+  "version": "0.1.0",
+  "description": "Internet Computer starter application",
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "Svelte",
+    "Canister",
+    "Internet Identity"
+  ],
+  "scripts": {
+    "build": "cd src/ic_leaks_frontend && npm run build",
+    "prebuild": "dfx generate",
+    "dev": "cd src/ic_leaks_frontend && npm run dev",
+    "prestart": "dfx generate"
+  },
+  "dependencies": {
+    "@dfinity/agent": "^0.20.2",
+    "@dfinity/auth-client": "^0.20.2"
+  }
+}

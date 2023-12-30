@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "ic_leaks_backend": {
+      "candid": "src/ic_leaks_backend/ic_leaks_backend.did",
+      "package": "ic_leaks_backend",
+      "type": "rust"
+    },
+  "internet-identity" : {
+      "type": "pull",
+      "id": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+    },
+    "ic_leaks_frontend": {
+      "dependencies": [
+        "ic_leaks_backend"
+      ],
+      "source": [
+        "src/ic_leaks_frontend/dist"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
